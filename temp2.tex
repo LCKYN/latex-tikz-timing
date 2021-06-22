@@ -1,0 +1,27 @@
+\documentclass[border=5pt]{standalone}
+\usepackage{tikz-timing}
+\usetikztiminglibrary{nicetabs} 
+
+\begin{document}
+ \begin{tikztimingtable}[timing/slope=0]
+   $A$& TTTTTTTTTTTTTTTTTTTT\\ 
+   $\overline{A}$& HTTTTTTTTTTTTTTTTTTT\\ 
+   $B$& 2T2T2T2T2T2T2T2T2T2T\\ 
+   $\overline{B}$& 2H2T2T2T2T2T2T2T2T2T\\ 
+   $A\ AND\ B$& LLLHLLLHLLLHLLLHLLLH \\ 
+   $A\ OR\ B$&  LHHHLHHHLHHHLHHHLHHH \\ 
+   \extracode
+   \tablegrid[black!25,step=0.5]
+\end{tikztimingtable}
+\begin{tikztimingtable}
+    a& TTTTTTTTTTTTTTTTTTTT\\ 
+    \extracode
+    \tablegrid[black!25,step=0.5]
+\end{tikztimingtable}
+
+\begin{tikztimingtable}[timing/slope=0.5]
+a& TTTTTTTTTTTTTTTTTTTT\\ 
+\extracode
+\tablegrid[black!25,step=0.5]
+\end{tikztimingtable}
+\end{document}
